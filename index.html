@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wy {
+            height: 54px;
+            width: 100%;
+        }
+
+        .qml {
+            display: inline-block;
+            width: 179px;
+            height: 54px;
+            line-height: 54px;
+            background-color: #cf1132;
+            color: floralwhite;
+            text-align: center;
+            text-decoration: none;
+        }
+        .daohang{
+            position: fixed;
+            z-index: 5;
+            width: 100%;
+            height: 63px;
+            background-color: #e0ebf2;
+        }
+        .daohang .left p{
+            margin-top: 15px;
+            margin-left: 30px;
+            display: inline-block;
+            width: 14px;
+            height: 80px;
+        }
+        .daohang .left img{
+            width: 96px;
+            height: 95px;
+            margin-left: 15px;
+        }
+        .video {
+            position: fixed;
+            overflow: hidden;
+            width: 100%;
+            height: 1150px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 网易的链接 -->
+    <div class="wy">
+        <!-- 游戏全目录 -->
+        <a href="javascript:;" class="qml">
+            <i></i>
+            游戏全目录
+        </a>
+    </div>
+    <!-- 游戏导航 -->
+    <div class="daohang">
+        <div class="left">
+            <p>花与剑手游</p>
+            <a href="//hyj.163.com/index.html" title="花与剑手游">
+            <img src="./images/logo.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- 视频背景 -->
+    <div class="video">
+        <video src="./vadio/1.mp4" autoplay loop muted></video>
+    </div>
+</body>
+
+</html>
