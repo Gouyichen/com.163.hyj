@@ -1,10 +1,341 @@
-
+body{
+    background-color: #f0f0f0;
+}
 
 .nei{
     width: 920px;
     height: 4483px;
     margin: 0 auto;
+    padding-top: 40px;
 }
 .nei h2{
-    background-image: url(./images/zxzx);
+    background-image: url(https://g.166.net/static/business/ds/img/00373ef.png);
+    background-position: -545px -131px;
+    width: 189px;
+    height: 44px;
+    margin-bottom: 20px;
+}
+.hei-he{
+    /* width: 920px;
+    padding: 0 30px; */
+    box-sizing: border-box;
+    width: 920px;
+    padding: 0 30px;
+    border-radius: 12px;
+    background-color:#fff;
+}
+.nei .nei-rong{
+    padding: 20px 0;
+    height: 220px;
+    width: 860px;
+    overflow: hidden;
+    border-bottom: 1px solid #999;
+    box-sizing: border-box;
+}
+.nei .bj-left img{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    float: left;
+    width: 320px;
+    height: 180px;
+}
+ .box .z-right{
+     overflow: hidden;
+     float: right;
+     width: 528px;
+     height: 176px;
+ }
+ .box .z-right em{
+     display: inline-block;
+     line-height: 30px;
+     width: 528px;
+     height: 64px;
+     font-size: 18px;
+     color: #333333;
+ }
+ .box .z-right  p{
+    width: 528px;
+    height: 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 21px;
+    line-height: 23px;
+    color: #999;
+ }
+
+
+ ul {
+    width: 283px;
+    height: 36px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    overflow: hidden;
+    text-align: center;
+    line-height: 36px;
+ }
+ ul li{
+    float: left;
+    width: 74px;
+    height: 36px;
+    box-sizing: border-box;
+    border: 1px solid ;
+    border-radius: 2px;
+    margin: 0 30px;
+ }
+ ul .li1{
+     float: left;
+     border-radius: 42%;
+     color: hsla(0,0%,100%,.5);
+     background: rgba(255,81,81,.5);
+ }
+ ul .li2{
+     float: right;
+     border-radius: 42%;
+     color: #fff;
+     background: #ff5151;
+ }
+
+ /* 公共头部 */
+
+
+
+ nav {
+    text-align: center;
+    height: 60px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+nav img {
+    width: 49px;
+    height: 49px;
+    margin-right: 111px;
+    position: relative;
+    top: 5px;
+}
+
+nav a {
+    position: relative;
+    top: -14px;
+    display: inline-block;
+    line-height: 60px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 104px;
+    color: #333;
+}
+
+nav .aa {
+    position: relative;
+    top: -14px;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    color: #e9545f;
+    border-bottom: 4px solid #e9545f;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #e9545f;
+}
+
+
+
+
+
+
+
+
+
+ /* 公共底部 */
+
+ .dao-er {
+    position: relative;
+    margin: auto;
+    min-width: 1200px;
+    color: #fff;
+    text-align: center;
+    background: #272a2c;
+    border-bottom: 1px solid hsla(0, 0%, 77.3%, .3);
+    height: 187px;
+}
+
+.dao-er .daoer {
+    width: 1545px;
+    height: 186px;
+    padding: 30px 0 26px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.dao-er .daoer .left {
+    float: left;
+    width: 540px;
+    height: 130px;
+}
+
+.dao-er .daoer .logo {
+
+    float: left;
+    width: 214px;
+    height: 60px;
+    overflow: hidden;
+    margin-top: 35px;
+    overflow: hidden;
+}
+
+.dao-er .daoer .logo img {
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+.dao-er .logo span {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.in-right {
+    float: right;
+    /* display: inline-block; */
+    width: 326px;
+    height: 130px;
+}
+
+.in-right img {
+    float: left;
+    width: 130px;
+    height: 130px;
+}
+
+.in-right .xia-zai {
+    float: right;
+    width: 186px;
+    height: 130px;
+    box-sizing: border-box;
+}
+
+.in-right .a1 {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 12px;
+    background-image: url(./images/wyds/xz.png);
+    background-position: 500px -442px;
+}
+
+.in-right .a1:hover {
+    background-position: 0 60px;
+}
+
+.in-right .a2 {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    background-image: url(./images/wyds/xz.png);
+    background-position: 0 120px;
+}
+
+.in-right .a2:hover {
+    background-position: 496px -830px;
+}
+
+.dao-er .right {
+    margin-top: 18px;
+    width: 846px;
+    height: 96px;
+    color: #fff;
+    float: right;
+    border-left: 1px solid;
+    border-left: 1px solid hsla(0, 0%, 77.3%, .3);
+    padding-left: 85px;
+}
+
+/* 写代码时，只有上帝和我知道这是干啥，现在只有上帝知道 */
+
+.dao-er .right p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.dao-er .bj {
+    width: 760px;
+    height: 56px;
+    text-align: left;
+}
+
+.dao-er em {
+    font-style: normal;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    width: 84px;
+    margin: 0 55px 12px 0;
+}
+
+.di-bu {
+    background: #272a2c;
+    color: #fff;
+    height: 142px;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+}
+
+.di-bu .box {
+    min-width: 840px;
+    display: inline-block;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 20px;
+    height: 102px;
+}
+
+.di-bu .box .top {
+    width: 840px;
+    margin-bottom: 20px;
+    height: 48px;
+    margin-top: 20px;
+}
+
+.di-bu .top .left {
+    float: left;
+    width: 271px;
+    height: 38px;
+}
+
+.di-bu .top .right {
+    float: left;
+    width: 529px;
+    height: 48px;
+}
+
+.di-bu .top .right a {
+    display: inline-block;
+    background-color: #610000;
+    z-index: 2;
+    right: 0;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 3px;
+    text-decoration: none;
+    top: 22px;
+    margin-top: 2px;
+    margin-left: 192px;
+    color: #fff;
+}
+
+.di-bu .box .bottom a{
+    text-decoration: none;
+    color: #fff;
 }

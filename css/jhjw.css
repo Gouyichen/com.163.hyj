@@ -128,3 +128,20 @@ h2 {
     word-break: break-all;
     transition: color ease-in-out .3s;
 }
+
+
+/* 回到顶步 */
+#tops{
+    position: fixed;
+    background-image: url(.././images/js/top.png);
+    background-position: -49px 0;
+    height: 50px;
+    width: 50px;
+    background-color: darkgrey;
+    right: 0;
+    bottom: 150px;
+    display: none;
+}
+#tops:hover{
+    background-color: #ccc;
+}
