@@ -1,81 +1,932 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="zh" id="index">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    
 
-        .wy {
-            height: 54px;
-            width: 100%;
-        }
 
-        .qml {
-            display: inline-block;
-            width: 179px;
-            height: 54px;
-            line-height: 54px;
-            background-color: #cf1132;
-            color: floralwhite;
-            text-align: center;
-            text-decoration: none;
-        }
-        .daohang{
-            position: fixed;
-            z-index: 5;
-            width: 100%;
-            height: 63px;
-            background-color: #e0ebf2;
-        }
-        .daohang .left p{
-            margin-top: 15px;
-            margin-left: 30px;
-            display: inline-block;
-            width: 14px;
-            height: 80px;
-        }
-        .daohang .left img{
-            width: 96px;
-            height: 95px;
-            margin-left: 15px;
-        }
-        .video {
-            position: fixed;
-            overflow: hidden;
-            width: 100%;
-            height: 1150px;
-        }
-    </style>
+<!--This is Git Project From HYJ/hyj-gw-pc-32830-20190806(12727)-->
+    <title>花与剑手游官网-网易古风言情手游“花与剑”今日全平台公测！</title>
+	<meta name="from" content="git:HYJ/hyj-gw-pc-32830-20190806">
+	<meta name="author" content="网易，NetEase Inc.">
+	<meta name="copyright" content="网易，NetEase Inc.">
+	<meta name="front-end technicist" content="mod">
+	<meta name="designer" content="denghui">
+	<meta name="editor" content="xiaoxiaotong">
+	<meta name="pmid" content="32830">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="applicable-device" content="PC">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta -equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- <link rel="dns-prefetch" href="s://res.nie.netease.com"> -->
+    <link rel="stylesheet" href="lib/alertbox/alertbox.css">
+    <link rel="stylesheet" href="lib/swiper/swiper.3.4.1.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-    <!-- 网易的链接 -->
-    <div class="wy">
-        <!-- 游戏全目录 -->
-        <a href="javascript:;" class="qml">
-            <i></i>
-            游戏全目录
+
+    <audio id="js-roleAudio"></audio>
+    <audio id="Jmusic" src="./audio/bgm.mp3" autoplay="autoplay" loop="loop"></audio>
+
+    <!--分享信息-->
+<div id="share_content">
+    <h1>君可愿暂歇江湖纷扰，与在下一同摇船碧波，执伞赏荷？</h1>
+    <div id="share_title" pub-name="分享文案">君可愿暂歇江湖纷扰，与在下一同摇船碧波，执伞赏荷？</div>
+    <div id="share_desc" pub-name="分享文本">花与剑：一花、一剑、一世、一缘。这是在唐朝，这里有一段你的故事，在这里，有你对“红颜江湖”的一切幻想！</div>
+    <img id="share_pic" data-src="images/index/share_6149fc7.jpg" pub-name="分享图片">
+</div>
+
+
+    <!--主体-->
+    <div class="main" id="skrollr-body">
+        <!--顶部导航-->
+        <div class="top-bar">
+            <div id="NIE-topBar"></div>
+        </div>
+        <!--页面导航-->
+        <div class="index-nav-wrap">
+
+    <div class="left-box">
+        <p>花与剑手游</p>
+        <a href="" title="花与剑手游"></a>
+    </div>
+
+    <div class="right-box">
+        <a href="javascript:;" class="share-show-btn" title="分享"></a>
+
+        <div class="share-item index-share" id="NIE-share"></div>
+
+        <div class="music-box">
+            <a class="music-btn" href="javascript:void(0);" title="音乐开关">
+                <i class="i1"></i><i class="i2"></i><i class="i3"></i>
+                <i class="i4"></i><i class="i5"></i><i class="i6"></i>
+            </a> 
+        </div>
+    </div>
+
+    <div class="center-box">
+        <a href="index.html" class="cur" title="官网首页">
+             <p>官网首页</p>
+             <span>HOME</span>
+        </a>
+        <a href="news/index.html" title="江湖见闻" target="_blank">
+            <p>江湖见闻</p>
+            <span>NEWS</span>
+        </a>
+        <a href="feature.html" title="花剑特色" target="_blank">
+            <p>花剑特色</p>
+            <span>FEATURE</span>
+        </a>
+        <a href="javascript:;" title="情缘主角" class="wdns">
+            <p>情缘主角</p>
+            <span>MALE OWNER</span>
+        </a>
+        <a href="feature.html?page=2" title="五大门派" target="_blank">
+            <p>五大门派</p>
+            <span>SECT</span>
+        </a>
+        <a href="feature.html?page=1" title="声色映像" target="_blank">
+            <p>声色映像</p>
+            <span>VIDEO</span>
+        </a>
+        <!-- <a href="s://hyj.16163.com/" title="论坛" target="_blank">
+            <p>论坛</p>
+            <span>BBS</span>
+        </a> -->
+        <a href="" title="网易大神" target="_blank">
+            <p>网易大神</p>
+            <span>大神</span>
+        </a>
+        <!-- <a href="javascript:;" title="关注">
+            <p>关注</p>
+            <span>ATTENTION</span>
+            <div class="side-ewm">
+                <div class="tab">
+                    <div class="btn">微信</div>
+                    <div class="btn ">贴吧</div>
+                    <div class="btn ">微博</div>
+                </div>
+        
+                <div class="con">
+                    <div class="pannel weixin">
+                        <div class="c-img">
+                            <img src="images/index/code-gzh_b74e916.jpg" alt="花与剑公众号">
+                        </div>
+                        <span class="ctip">扫一扫关注公众号</span>
+                    </div>
+                    <div class="pannel douyin">
+                        <div class="c-img">
+                            <img src="images/index/code-tb_f68e2c4.png" alt="扫一扫关注贴吧">
+                        </div>
+                        <span class="ctip">扫一扫关注贴吧</span>
+                    </div>
+                    <div class="pannel douyin">
+                        <div class="c-img">
+                            <img src="images/index/code-wb_d652ec6.jpg" alt="扫一扫关注微博">
+                        </div>
+                        <span class="ctip">扫一扫关注微博</span>
+                    </div>
+                </div>
+            </div>
+        </a> -->
+        <a href="" class="noLine" title="同人社区" target="_blank">
+            <p>同人社区</p>
+            <span>community</span>
         </a>
     </div>
-    <!-- 游戏导航 -->
-    <div class="daohang">
-        <div class="left">
-            <p>花与剑手游</p>
-            <a href="//hyj.163.com/index.html" title="花与剑手游">
-            <img src="./images/logo.png" alt="">
+
+   
+
+</div>
+        <div class="wrap">
+            <!--part-1-->
+            <div class="part part-1">
+                <div class="bg">
+    <!-- <div class="niao">
+        <div class="ani"></div>
+    </div>
+    <div class="niao2">
+        <div class="ani"></div>
+    </div> -->
+    <div class="btVideo">
+        <video src="./video/1.mp4" autoplay loop muted></video>
+    </div>
+</div>
+
+<!-- <div class="dashu" data-0="transform:translateY(0px);" data-end="transform:translateY(-500px);">
+    <div class="hoshi"></div>
+</div> -->
+
+<!--侧栏新闻-->
+<div class="slide-news-wrap">
+    <div class="news-cont">
+        <div class="close"></div>
+        <a class="more" href="" target="_blank" title="更多"></a>
+
+        <div class="news-list">
+            <!-- <a href="#" target="_blank" title="链接">
+                [新闻]
+            </a> -->
+                             <a href="#" target="_blank" title="2020年04月30日例行维护公告">
+                    [公告]2020年04月30日例行维护公告
+                </a>
+                             <a href="#" target="_blank" title="【04.27新服】：双平台互通服 “梦与君同”">
+                    [公告]【04.27新服】：双平台互通服 “梦与君同”
+                </a>
+                             <a href="#" target="_blank" title="【04.24新服】：双平台互通服 “恋人未满”">
+                    [公告]【04.24新服】：双平台互通服 “恋人未满”
+                </a>
+            
+        </div>
+
+    </div>
+    <div class="news-btn"></div>
+</div>
+
+<div class="center" data-0="transform:translateY(0px);" data-end="transform:translateY(-1700px);">
+    <div class="slogan">
+        <div class="video-btn" data-src="./video/vido.mp4">
+            <div class="rotate"></div>
+            <i></i>
+        </div>
+    </div>
+   
+    <div id="nie-download" class="nie-download download-containe" pub-name="下载参数1" data-download="whm|gw">
+        <div class="NIE-qrcode-1 img-containe">
+            <img src="images/index/gw-dl-code_0f4fdf5.png" alt="下载二维码">
+        </div>
+        <div class="downloads btns-containe">
+            <div class="yyan-containe">
+                <a href="javascript:;" class="ios-btn NIE-button-ios" target="_blank" title="App Store下载"></a>
+                <a href="javascript:;" class="android-btn NIE-button-android" target="_blank" title="安卓下载"></a>
+                <!-- <a href="javascript:;" class="oreder_btn" title="安卓预约"></a> -->
+            </div>
+            <a href="" target="_blank" class="pc-download" title="桌面版下载">
+                <p class="p1">桌面版下载</p>
+                <p class="p2">（手机扫码登录）</p>
             </a>
         </div>
     </div>
-    <!-- 视频背景 -->
-    <div class="video">
-        <video src="./vadio/1.mp4" autoplay loop muted></video>
-    </div>
-</body>
+    <!-- <div class="order-btn oreder_btn" id="js-orderShow-btn">
+        <div class="award-box">
+            <div class="award-img"></div>
+            <div class="award-tips"></div>
+        </div>
+    </div> -->
+</div>
+<!-- 
+<div class="front" data-0="transform:translateY(0px);" data-end="transform:translateY(-400px);">
+    <div class="cloud1"></div>
+    <div class="cloud2"></div>
+    <div class="role"></div>
+    <div class="img"></div>
+</div> -->
 
+<div class="mask" data-0="transform:translateY(0px);" data-end="transform:translateY(-3000px);"></div> 
+            </div>
+            <!--part-2-->
+            <div class="part part-2">
+                <div class="bg">
+    <div class="cloud1"></div>
+    <div class="cloud2"></div>
+    <div class="cloud3"></div>
+    <div class="cloud4"></div>
+    <div class="yezi yezi1"></div>
+    <div class="yezi yezi2"></div>
+    <div class="yezi yezi3"></div>
+    <div class="yezi yezi4"></div>
+    <div class="yezi yezi5"></div>
+    <div class="yezi yezi6"></div>
+</div>
+<div class="win" data-bottom-top="transform:translateY(200px);" data-top="transform:translateY(0px);" data-top-bottom="transform:translateY(-100px);"></div>
+<div class="dashu" data-bottom-top="transform:translateY(500px);" data-top="transform:translateY(0px);" data-top-bottom="transform:translateY(-500px);">
+        
+    <div class="role"></div>
+
+    <div class="news-btn-list" id="js-news-btn">
+        <div class="news-btn news-btn-1 cur" data-index="0"></div>
+        <div class="news-btn news-btn-2" data-index="1"></div>
+        <div class="news-btn news-btn-3" data-index="2"></div>
+    </div>
+
+    <div class="news-box">
+        <div class="new-cont">
+            <div class="swiper-container" id="banner-swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- <div class="swiper-slide">
+                        <a href="a" target="_blank" title="111">
+                            <img src="images/index/banner-1_89ead3b.png" alt="img">
+                        </a>
+                    </div> -->
+
+                                         <div class="swiper-slide">
+                        <a href="://hyj.163.com/2020/dh/" target="_blank" title="序列号兑换">
+                            <img src="images/index/01a63265-3240-464c-9def-3f83c8ef6e1d.jpg" alt="序列号兑换">
+                        </a>
+                    </div>
+                                         <div class="swiper-slide">
+                        <a href="#" target="_blank" title="《剑舞河山》公测">
+                            <img src="images/index/e03bb580-dcf5-44ca-b388-bdd3858e8feb.jpg" alt="《剑舞河山》公测">
+                        </a>
+                    </div>
+                                         <div class="swiper-slide">
+                        <a href="#" target="_blank" title="花与剑-扇">
+                            <img src="images/index/e74a3a7c-5a44-442c-98f3-3419d7c3ea16.png" alt="花与剑-扇">
+                        </a>
+                    </div>
+                                         <div class="swiper-slide">
+                        <a href="#" target="_blank" title="花与剑">
+                            <img src="images/index/aae43269-260c-419e-883d-d09abefa559a.png" alt="花与剑">
+                        </a>
+                    </div>
+                                         <div class="swiper-slide">
+                        <a href="#" target="_blank" title="花与剑异业合作">
+                            <img src="images/index/20122595-82f7-447b-90d6-bb57f1de1ec0.png" alt="花与剑异业合作">
+                        </a>
+                    </div>
+                                         <div class="swiper-slide">
+                        <a href="#" target="_blank" title="宴山亭x花与剑x华裳九州联名款">
+                            <img src="images/index/14105df3-46c9-46a9-a345-883a3fe165c9.jpg" alt="宴山亭x花与剑x华裳九州联名款">
+                        </a>
+                    </div>
+                    
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="new-list-box">
+                <div class="swiper-container" id="list-swiper">
+                    <div class="swiper-wrapper">
+    
+                        <div class="swiper-slide">
+
+                            <!-- <a href="a" target="_blank" title="111">
+                                <span class="t">232323232232323</span>
+                                <span class="time">07-04</span>
+                            </a> -->
+
+                                                         <a href="#" target="_blank" title="2020年04月30日例行维护公告">
+                                <span class="t">2020年04月30日例行维护公告</span>
+                                <span class="time">04-29</span>
+                            </a>
+                                                         <a href="#" target="_blank" title="【04.27新服】：双平台互通服 “梦与君同”">
+                                <span class="t">【04.27新服】：双平台互通服 “梦与君同”</span>
+                                <span class="time">04-26</span>
+                            </a>
+                                                         <a href="#" target="_blank" title="【04.24新服】：双平台互通服 “恋人未满”">
+                                <span class="t">【04.24新服】：双平台互通服 “恋人未满”</span>
+                                <span class="time">04-23</span>
+                            </a>
+                                                         <a href="#" target="_blank" title="2020年04月23日例行维护公告">
+                                <span class="t">2020年04月23日例行维护公告</span>
+                                <span class="time">04-22</span>
+                            </a>
+                                                    </div>
+
+                        <div class="swiper-slide">
+
+                                                         <a href="#" target="_blank" title="亲手喂糕点、共浴温泉…… “花与剑”李世民撩妹功力全开">
+                                <span class="t">亲手喂糕点、共浴温泉…… “花与剑”李世民撩妹功力全开</span>
+                                <span class="time">04-22</span>
+                            </a>
+                                                         <a href="#" target="_blank" title="少年，当仗剑江湖！“花与剑”剑舞河山大型资料片上线">
+                                <span class="t">少年，当仗剑江湖！“花与剑”剑舞河山大型资料片上线</span>
+                                <span class="time">04-17</span>
+                            </a>
+                                                         <a href="#" target="_blank" title="《剑舞河山》明日开启 “花与剑”首个大型资料片到来">
+                                <span class="t">《剑舞河山》明日开启 “花与剑”首个大型资料片到来</span>
+                                <span class="time">04-16</span>
+                            </a>
+                                                         <a href="#" target="_blank" title="光攻略NPC怎么够 “花与剑”让玩家把他们统统带回家养起来">
+                                <span class="t">光攻略NPC怎么够 “花与剑”让玩家把他们统统带回家养起来</span>
+                                <span class="time">04-15</span>
+                            </a>
+                            
+                        </div>
+
+                        <div class="swiper-slide">
+
+                                                         <a href="#" target="_blank" title="2020年04月30日例行维护公告">
+                                <span class="t">2020年04月30日例行维护公告</span>
+                                <span class="time">04-29</span>
+                            </a>
+                                                         <a href="#" target="_blank" title="【04.27新服】：双平台互通服 “梦与君同”">
+                                <span class="t">【04.27新服】：双平台互通服 “梦与君同”</span>
+                                <span class="time">04-26</span>
+                            </a>
+                                                         <a href="#" target="_blank" title="【04.24新服】：双平台互通服 “恋人未满”">
+                                <span class="t">【04.24新服】：双平台互通服 “恋人未满”</span>
+                                <span class="time">04-23</span>
+                            </a>
+                                                         <a href="#" target="_blank" title="2020年04月23日例行维护公告">
+                                <span class="t">2020年04月23日例行维护公告</span>
+                                <span class="time">04-22</span>
+                            </a>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="news/index.html" class="more-btn" id="js-newsMore" target="_blank"></a>
+
+        </div>
+    </div>
+
+    <div class="brand"></div>
+
+</div>
+
+<div class="mask" data-bottom-top="transform:translateY(0px);" data-top="transform:translateY(-250px);"></div>
+            </div>
+            <!--part-3-->
+            <div class="part part-3">
+                <div class="move-box">
+    <div class="bg" data-2000-start="transform:translateY(250px);" data-2350-start="transform:translateY(0px);">
+        <div class="top-mask"></div>
+        <div class="img" data-2400-start="opacity:0;" data-2550-start="opacity:1;"></div>
+    </div> 
+    <div class="dashu">
+        <div class="dashu-bg" data-2400-start="opacity:1;" data-2550-start="opacity:0;"></div>
+        <div class="img" data-2400-start="opacity:0;" data-2550-start="opacity:1;"></div>
+    </div>
+    <div class="qiao" data-1900="transform:translateY(300px);" data-2380="transform:translateY(0px);">
+            <div class="img" data-2400-start="opacity:0;" data-2550-start="opacity:1;"></div>
+    </div>
+    
+    <div class="hean">
+        <div class="head-bg" data-2400="opacity:1;" data-2550="opacity:0;"></div>
+        <div class="baitian" data-2400="opacity:1;" data-2550="opacity:0;"></div>
+        <div class="img" data-2400-start="opacity:0;" data-2550-start="opacity:1;">
+            <div class="heiye"></div>
+        </div>
+    </div>
+    
+    <div class="wing" data-2400="transform:translateY(150px);opacity:0;" data-2600="transform:translateY(0px);opacity:1;" data-2700="transform:translateY(-20px);opacity:0;"></div>
+    
+    <div class="hehua-box" data-2300="opacity:0;" data-2400="opacity:1;">
+        <div class="hh-bg"></div> 
+        <div class="hehua hehua-1">
+            <div class="text-box" data-2250="transform:translateY(80px);" data-2350="transform:translateY(0px);">
+                <div class="text">留言加好友</div>
+            </div>
+            <div class="img"></div>
+        </div>
+        <div class="hehua hehua-2">
+            <div class="text-box" data-2250="transform:translateY(80px);" data-2350="transform:translateY(0px);">
+                <div class="text">留言加好友</div>
+            </div>
+            <div class="img"></div>
+        </div>
+        <div class="hehua hehua-3">
+            <div class="text-box" data-2250="transform:translateY(80px);" data-2350="transform:translateY(0px);">
+                <div class="text">留言加好友</div>
+            </div>
+            <div class="img"></div>
+        </div>
+    
+        <div class="fang-btn">
+            <div class="num">
+                <span></span>
+            </div>
+        </div>
+        <div class="lao-btn">
+            <div class="num">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ym ym1"></div>
+    <div class="ym ym2"></div>
+    <div class="ym ym3"></div>
+    <div class="ym ym4"></div>
+    <div class="ym ym5"></div>
+    <div class="ym ym6"></div>
+    <div class="ym ym7"></div>
+    <div class="ym ym8"></div>
+    
+    <div class="dlRole-btn" data-2000-start="transform:translateY(200px);" data-2300-start="transform:translateY(0px);"></div>
+</div>
+
+<div class="bottom-mask"></div>
+<div class="mask" data-bottom-top="transform:translateY(80px);" data--100-top="transform:translateY(-100px);"></div>
+
+
+            </div>
+            <!--part-4-->
+            <div class="part part-4">
+                <div class="bg"></div>
+<div class="nz-bg"></div>
+<div class="role-swiper-wrap" data-bottom-top="transform:translateY(300px);" data-200-top="transform:translateY(0px);" data-top-bottom="transform:translateY(-50px);">
+  <div class="swiper-container" id="role-swiper">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide lsm">
+            <img data-src="images/index/lsm-bg_68b8e5a.png" class="swiper-lazy rBg" alt="img">
+            <div class="role swiper-lazy"></div>
+            <img data-src="images/index/lsm-qj_3c1ee44.png" class="swiper-lazy qj" alt="img">
+            <div class="name"></div>
+            <div class="cv"></div>
+        </div>
+        <div class="swiper-slide gzm">
+            <div class="role"></div>
+            <img data-src="images/index/gzm-qj_366ff9c.png" class="swiper-lazy qj" alt="img">
+            <div class="name"></div>
+            <div class="cv"></div>
+        </div>
+        
+        <div class="swiper-slide lm">
+            <img data-src="images/index/lm-bg_4d0da4c.png" class="swiper-lazy rBg" alt="img">
+            <img data-src="images/index/lm-qj_c8a40cd.png" class="swiper-lazy qj" alt="img">
+            <div class="role"></div>
+            <div class="name"></div>
+        </div>
+        <div class="swiper-slide lmf">
+            <img data-src="images/index/lmf-bg_cd8d234.png" class="swiper-lazy rBg" alt="img">
+            <div class="role swiper"></div>
+            <img data-src="images/index/lmf-qj_1c44bdd.png" class="swiper-lazy qj" alt="img">
+            <div class="name"></div>
+            <div class="cv"></div>
+        </div>
+        <div class="swiper-slide lsx">
+            <img data-src="images/index/lsx-bg_5d000b4.png" class="swiper-lazy rBg" alt="img">
+            <div class="role"></div>
+            <img data-src="images/index/lsx-qj_519a584.png" class="swiper-lazy qj" alt="img">
+            <div class="name"></div>
+            <div class="cv"></div>
+        </div>
+        <div class="swiper-slide lxy">
+            <img data-src="images/index/lxy-bg_1c49661.png" class="swiper-lazy rBg" alt="img">
+            <div class="role swiper-lazy"></div>
+            <div class="name"></div>
+            <div class="cv"></div>
+        </div>
+        <div class="swiper-slide hzg">
+            <img data-src="images/index/hzg-bg_43d52dd.png" class="swiper-lazy rBg" alt="img">
+            <div class="role swiper-lazy"></div>
+            <img data-src="images/index/hzg-qj_f1e6f34.png" class="swiper-lazy qj" alt="img">
+            <div class="name"></div>
+            <div class="cv"></div>
+        </div>
+        <div class="swiper-slide lze">
+            <img data-src="images/index/lze-bg_7b88f53.png" class="swiper-lazy rBg" alt="img">
+            <div class="role swiper-lazy"></div>
+            <img data-src="images/index/lze-qj_40906bd.png" class="swiper-lazy qj" alt="img">
+            <div class="name"></div>
+            <div class="cv"></div>
+        </div>
+
+        <div class="swiper-slide lqh">
+            <img data-src="images/index/lqh-bg_1e55d00.png" class="swiper-lazy rBg" alt="img">
+            <div class="role swiper-lazy"></div>
+            <img data-src="images/index/lqh-qj_8051f62.png" class="swiper-lazy qj" alt="img">
+            <div class="name"></div>
+            <div class="cv"></div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="huazhi" data-bottom-top="transform:translateY(400px);" data-top="transform:translateY(0px);" data-top-bottom="transform:translateY(-400px);">
+    <div class="prev-btn" id="role-prev-btn"></div>
+    <div class="next-btn" id="role-next-btn"></div>
+</div>
+
+<!-- data-bottom-top="transform:translateY(250px);" data-center="transform:translateY(0px);" data-top-bottom="transform:translateY(-250px);"-->
+<div class="role-intr">
+    <div class="text" id="js-role-text">
+        <div class="lsm"></div>
+        <div class="gzm"></div>
+        <div class="lm"></div>
+        <div class="lmf"></div>
+        <div class="lsx"></div>
+        <div class="lxy"></div>
+        <div class="hzg"></div>
+        <div class="lze"></div>
+        <div class="lqh"></div>
+    </div>
+    <div class="audio-btn" id="js-rAudio-btn"></div>
+</div>
+
+
+
+<div class="flower-wrap">
+    <ul class="flower1 flower">
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+    </ul>
+    <ul class="flower2 flower">
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+    </ul>
+</div>
+
+<div class="mask" data-bottom-top="transform:translateY(300px);" data--50-top="transform:translateY(-50px);"></div>
+            </div>
+            <!--part-5-->
+            <div class="part part-5">
+                <div class="bg"></div>
+<div class="juanzhou" data-bottom-top="transform:translateY(400px);" data-top="transform:translateY(-100px);">
+    <div class="zhiye"></div>
+    <div class="btn-box">
+        <a class="mpxq-btn" href="feature.html?page=2" target="_blank" title="门派详情"></a>
+        <a class="yxts-btn" href="feature.html" target="_blank" title="游戏特色"></a>
+        <a class="yyzx-btn" href="feature.html?page=1" target="_blank" title="影音中心"></a>
+    </div>
+</div>
+
+<div class="yun1"></div>
+<div class="yun2"></div>
+
+<div class="mask" data-bottom-top="transform:translateY(150px);" data-center="transform:translateY(-150px);"></div>
+            </div>
+            <!--part-6-->
+            <div class="part part-6">
+                 <div class="bg" data-bottom-top="transform:translateY(200px);" data-bottom="transform:translateY(0px);"></div>
+ <div class="float" data-bottom-top="transform:translateY(300px);" data-bottom="transform:translateY(0px);"></div>
+ <div class="lqh" data-bottom-top="transform:translateY(400px);" data-bottom="transform:translateY(0px);"></div>
+
+ <div class="content-wrap" data-bottom-top="transform:translateY(200px);" data-bottom="transform:translateY(0px);">
+     <div class="correlation">
+         <div class="code-box c1">
+             <img src="images/index/code-wb_d652ec6.jpg" alt="官方微博">
+             <p>
+                官方微博：<br>
+                <a href="#" title="花与剑手游" target="_bliank">花与剑手游</a>
+             </p>
+         </div>
+         <div class="code-box c2">
+            <img src="images/index/code-gzh_b74e916.jpg" alt="公众号">
+            <p>
+                公众号：<br>
+                <span>huayujian163</span>
+            </p>
+        </div>
+        <div class="code-box c3">
+            <img src="images/index/code-ds_8dcb852.png" alt="大神号">
+            <p>
+                大神号：<br>
+                <span>网易花与剑手游</span>
+            </p>
+        </div>
+        <div class="code-box c4">
+            <p>
+                客服电话：<br>
+                <span>95163549</span>
+            </p>
+        </div>
+     </div>
+     
+     <div class="index-footer">
+          <!--底部版权-->
+        <div class="footer">
+            <div id="NIE-copyRight"></div>
+        </div>
+     </div>
+ </div>
+            </div>
+        </div>
+    </div>
+
+    <!--固定导航-->
+    <div class="fix-nav">
+        <div class="fix-btn">官网首页</div>
+        <div class="fix-btn">江湖见闻</div>
+        <div class="fix-btn">花灯集</div>
+        <div class="fix-btn">情缘主角</div>
+        <div class="fix-btn">门派特色</div>
+    </div>
+    
+    <div class="qrcode-fix">
+        <div class="tab-btn">
+            <a href="javascript:void(0)" class="cur" title="微信">微信</a>
+            <a href="javascript:void(0)" title="贴吧">贴吧</a>
+            <a href="javascript:void(0)" title="微博">微博</a>
+        </div>
+        <div class="tab-code">
+            <img src="images/index/code-gzh_b74e916.jpg" class="cur" alt="微信">
+            <img src="images/index/code-tb_f68e2c4.png" alt="贴吧">
+            <img src="images/index/code-wb_d652ec6.jpg" alt="微博">
+        </div>
+        <div class="tab-p">
+            <p class="cur">
+                扫一扫<br>
+                关注微信
+            </p>
+            <p>
+	                扫一扫<br>
+	                关注贴吧
+            </p>
+            <p>
+                扫一扫<br>
+                关注微博
+            </p>
+        </div>
+        
+    </div>
+
+    <!--视频弹窗-->
+<div class="pop pop-video">
+    <div class="video-box">
+        <div id="video"></div>
+        <a class="close" href="javascript:;" title="关闭"></a>
+    </div>
+</div>
+
+<div class="pop pop-gmTips">
+    <div class="cont">
+        <div class="close"></div>
+        <div class="text">
+        </div>
+        <div class="btn">确认</div>
+    </div>
+</div>
+
+
+<!--提示弹窗-->
+<div class="pop pop-tips">
+    <div class="cont">
+        <div class="close"></div>
+        <div class="text">
+        </div>
+        <div class="btn">预约游戏</div>
+    </div>
+</div>
+
+<!--放灯规则弹窗-->
+<div class="pop pop-gdgz">
+    <div class="cont">
+        <div class="close"></div>
+        <div class="text-box">
+            <p class="t">花灯规则：</p>
+            <p>1、荷灯包括NPC留言和玩家留言两种。</p>
+            <p>2、用户每天进入官网可有3次捞灯机会和1次放灯机会，成功预约游戏可分别额外增加1次，分享又可增加1次。</p>
+            <p>3、玩家打捞到的荷灯可以留言&分享，并放回河内继续漂流，直到遇见新的有缘人。</p>
+            <p>4、玩家放置荷灯后可以在官网随机被陌生人回复，或转发到微信邀请朋友来回复。</p>
+        </div>
+    </div>
+</div>
+
+
+<!--玩家npc弹窗-->
+<div class="pop pop-wanjia">
+    <div class="cont">
+        <div class="close-box">
+            <div class="close"></div>
+        </div>  
+        <div class="user-info" id="js-user-info">
+            <div class="head" data-tx="1">
+                <img src="" alt="头像">
+            </div>
+            <div class="name"></div> 
+        </div>
+        <!--展示评论-->
+        <div class="msg-wrap">
+            <div class="msg-list">
+
+                <!-- <div class="list">
+                    <div class="header">
+                        <img src="images/index/head_981d121.png" alt="头像">
+                    </div>
+                    <div class="right">
+                        <div class="name">韩子高</div>
+                        <div class="text">
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <textarea class="comment-input" maxlength="100" placeholder="输入留言"></textarea>
+
+            <!--按钮-->
+            <div class="btn-list">
+                <div class="post-btn"></div>
+                <div class="share-btn">
+                    <div class="share-more"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- 预约飘窗 -->
+<div class="order_bayWindow">
+    <p>扫一扫立即预约</p>
+    <img src="images/index/order_qrcode_a0fadba.jpg" alt="qrcode">
+    <a href="javascript:;" class="oreder_btn" title="立即预约"></a>
+</div>
+
+<!-- 预约弹窗 -->
+<div class="pop pop-order">
+    <div class="cont">
+        <div class="order-cont">
+            <a href="javascript:;" class="close" title="关闭"></a>
+            <!--预约弹窗-->
+            <div class="order-form">
+                <div class="system">
+                    <!-- <span class="select" data-sys="ios">iOS</span> -->
+                    <span class="select" data-sys="android">Android</span>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="请输入手机号码" id="tel" maxlength="11">
+                </div>
+                <div class="captcha" id="captcha"></div>
+                <div class="input">
+                    <input type="text" placeholder="输入验证码" id="yzmCode" maxlength="6">
+                    <a href="javascript:;" class="yzm_btn" id="yzm_btn" title="获取验证码">获取验证码</a>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="请输入邮箱（选填）" id="email">
+                </div>
+                <div class="order-submit">
+                    <a href="javascript:;" class="order-submit-btn" id="order_btn" title="立即预约"></a>
+                </div>
+                <div class="order-tips">预约游戏即可获得专属邀请码，邀请好友预约游戏，公测可获得丰富奖励哦！</div>
+                <div class="input">
+                    <input type="text" placeholder="好友邀请码（选填）" id="code">
+                </div>
+            </div>
+            <!--预约成功弹窗-->
+            <div class="order-success">
+                <p>预约成功！</p>
+                <p>恭喜你预约成功，获得公测礼包</p>
+                <p>您的邀请码是<span class="shareCode"></span>，召唤好友获得惊喜奖励</p>
+                <ul class="gift-list">
+                    <li>
+                        <span>
+                            <img src="images/index/order_succ_gift1_fd53212.png" alt="银币">
+                        </span>
+                        <em>成功邀请1位好友</em>
+                        <em>银币166666</em>
+                        <em>星耀石*20</em>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="images/index/order_succ_gift2_087c89d.png" alt="星耀石">
+                        </span>
+                        <em>成功邀请3位好友</em>
+                        <em>银币266666</em>
+                        <em>星耀石*40</em>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="images/index/order_succ_gift3_b7c9632.png" alt="五色琉璃">
+                        </span>
+                        <em>成功邀请5位好友</em>
+                        <em>银币566666</em>
+                        <em>星耀石*100</em>
+                        <em>五色琉璃*1</em>
+                    </li>
+                </ul>
+                <p>您也可以通过以下两种方式进行邀请</p>
+                <div class="order_qrcode">
+                    <p>1、手机QQ或者微信扫描二维码分享页面</p>
+                    <img class="qrCode" src="images/index/f5c138547ced40a18adcb528d6686fa5.gif" alt="">
+                </div>
+                <div class="order_link">
+                    <p>2、专属邀请链接：<span class="shareUrl"></span></p>
+                    <a href="javascript:;" class="copy_btn" title="复制链接">复制链接</a>
+                </div>
+            </div>
+            <div class="order-yq">
+                <p class="tit">已邀请好友</p>
+                <p class="p1">已有 <span class="yq_num">0</span> 位好友加入我的小队</p>
+                <p class="p2">
+                    继续邀请好友预约加入，可解锁<span class="yq_jl"></span>奖励
+                </p>
+                <ul class="gift-list">
+                    <li>
+                        <span>
+                            <img src="images/index/order_succ_gift1_fd53212.png" alt="银币">
+                        </span>
+                        <em>成功邀请1位好友</em>
+                        <em>银币166666</em>
+                        <em>星耀石*20</em>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="images/index/order_succ_gift2_087c89d.png" alt="星耀石">
+                        </span>
+                        <em>成功邀请3位好友</em>
+                        <em>银币266666</em>
+                        <em>星耀石*40</em>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="images/index/order_succ_gift3_b7c9632.png" alt="五色琉璃">
+                        </span>
+                        <em>成功邀请5位好友</em>
+                        <em>银币566666</em>
+                        <em>星耀石*100</em>
+                        <em>五色琉璃*1</em>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="ordered">
+                <p>您已经是预约玩家啦，捕捞荷灯次数+1</p>
+                <a href="javascript:;" title="确认" class="ordered_btn">确 认</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 下载左飘窗 -->
+<div class="left-slide">
+    <p>扫码立即下载</p>
+    <div id="nie-download" class="nie-download download-containe" pub-name="下载参数" data-download="whm|gw">
+        <div class="NIE-qrcode-1 img-containe">
+            <img src="images/index/gw-dl-code_0f4fdf5.png" alt="下载二维码">
+        </div>
+        <div class="downloads btns-containe">
+            <div class="yyan-containe">
+                <a href="javascript:;" class="ios-btn NIE-button-ios" target="_blank" title="App Store下载"></a>
+                <a href="javascript:;" class="android-btn NIE-button-android" target="_blank" title="安卓下载"></a>
+                <!-- <a href="javascript:;" class="oreder_btn" title="安卓预约"></a> -->
+            </div>
+            <a href="#" target="_blank" class="pc-download" title="桌面版下载">
+                <p class="p1">桌面版下载</p>
+                <p class="p2">（手机扫码登录）</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    <iframe src="#" style="display:none"></iframe>
+
+    <script src="./lib/jquery/jquery(mixnie).1.11.js"></script>
+    <script src="./lib/jquery/6f4b4b9cae614738abdd8a12b029b9b4.js"></script>
+    <script src="./lib/jquery/load.min.js"></script>
+    <script src="./lib/jquery/jquery.mousewheel_fdf242a.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+
+
+</body>
 </html>
+<!--This is Git Project From HYJ/hyj-gw-pc-32830-20190806(12727)-->
+<!--stamp:f2caaba9-f400-4b11-879b-3b99b96b200c,tplId:22703,pageId:25177,tplName:花与剑-19v2官网-PC[index][正式][12727]-->
