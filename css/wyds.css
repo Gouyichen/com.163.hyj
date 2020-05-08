@@ -126,6 +126,7 @@ background-position: 312px -384px; */
     padding-top: 120px;
     background: url(../images/wyds/3205f85.jpg) top no-repeat;
     background-size: auto 100%;
+    position: relative;
 }
 
 .si {
@@ -133,6 +134,7 @@ background-position: 312px -384px; */
     padding-top: 103px;
     background: url(../images/wyds/941c6c5.jpg) top no-repeat;
     background-size: auto 100%;
+    position: relative;
 }
 
 .wu {
@@ -327,4 +329,26 @@ background-position: 312px -384px; */
 .di-bu .box .bottom a{
     text-decoration: none;
     color: #fff;
+}
+
+.two img{
+    position: absolute;
+    left: calc(-50% - -1280px);
+    top: -362px;
+    display: inline-block;
+}
+.san img{
+    position: absolute;
+    left: calc(-50% - -1304px);
+    top: -718px;
+    display: inline-block;
+    width: 1190px;
+}
+.si img{
+    position: absolute;
+    left: calc(-50% - -1380px);
+    top: -1141px;
+    display: inline-block;
+    width: 1040px;
+    height: 1026px;
 }
